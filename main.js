@@ -74,7 +74,7 @@ function guess() {
 }
 
 function accuracy(guess) {
-    return Math.abs((Math.abs(goal - guess) / max) - 1);    // Get the accuracy of the guess (0 = completely wrong - 1 = goal)
+    return Math.abs((Math.abs(goal - guess) / max) - 1);    // Get the accuracy of the guess (0 = completely wrong, 0.5 = still pretty bad, 1 = goal)
 }
 
 function accuracyToMutation(accuracy) {
